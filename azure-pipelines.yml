@@ -1,4 +1,6 @@
 pool:
+
+    
    vmImage: 'ubuntu-latest' # set to windows-latest or another Windows vmImage for Windows builds
 
 variables:
@@ -17,4 +19,5 @@ steps:
     scanType: 'images'
     twistlockService: 'lcastro_azure_devops'
     artifact: 'pipelines-javascript-docker*'
+    project: 'lcastro_azure_devops_pipeline'
 
