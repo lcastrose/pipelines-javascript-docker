@@ -16,6 +16,6 @@ steps:
   inputs:
     scanType: 'images'
     twistlockService: 'lcastro_azure_devops'
-    artifact: 'lcastrose.pipelines-javascript-docker'
+    artifact: 'pipelines-javascript-docker'
     project: 'lcastro_pipeline'
 
