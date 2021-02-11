@@ -1,12 +1,3 @@
-trigger:
-- task: prisma-cloud-compute-scan@3
-  inputs:
-    scanType: 'images'
-    twistlockService: 'lcastro_azure_devops'
-    artifact: 'node:8'
-    project: 'lcastro_pipeline'
-- main
-
 pool:
    vmImage: 'ubuntu-latest' # set to windows-latest or another Windows vmImage for Windows builds
 
@@ -20,3 +11,12 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
+
+trigger:
+- task: prisma-cloud-compute-scan@3
+  inputs:
+    scanType: 'images'
+    twistlockService: 'lcastro_azure_devops'
+    artifact: 'node:8'
+    project: 'lcastro_pipeline'
+- main
