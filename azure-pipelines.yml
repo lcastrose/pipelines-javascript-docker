@@ -1,4 +1,10 @@
 trigger:
+- task: prisma-cloud-compute-scan@3
+  inputs:
+    scanType: 'images'
+    twistlockService: 'lcastro_azure_devops'
+    artifact: 'node:8'
+    project: 'lcastro_pipeline'
 - main
 
 pool:
