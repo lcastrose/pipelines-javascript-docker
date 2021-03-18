@@ -17,6 +17,6 @@ steps:
 - task: prisma-cloud-compute-scan@3
   inputs:
     scanType: 'images'
-    twistlockService: 'lcastro_azure_devops'
+    twistlockService: 'lcastro-devops'
     artifact: 'pipelines-javascript-docker*'
 
